@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Layout</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, footer {
+            background: orange;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        nav {
+            background: lightgreen;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+        }
+
+        section {
+            background: gold;
+            flex: 3;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background: salmon;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        aside {
+            background: lightblue;
+            flex: 1;
+            padding: 12px;
+            margin: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <p>Navigation Menu</p>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Article 1</h2>
+                <p>Konten artikel pertama.</p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p>Konten artikel kedua.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Informasi tambahan atau iklan.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Footer - Hak Cipta &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
